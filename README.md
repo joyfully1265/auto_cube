@@ -7,6 +7,12 @@ A tool to automate two MapleStory item upgrade flows:
 - **Flame** mode re-rolls an item's *bonus stats* until the weighted flame
   score passes a threshold.
 
+<img src="docs/cube1.gif" alt="Cube" width="640" />
+<br>
+<img src="docs/flame1.gif" alt="Flame1" width="640" />
+<br>
+<img src="docs/flame2.gif" alt="Flame2" width="640" />
+
 # Installation
 
 ```
