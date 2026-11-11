@@ -41,8 +41,8 @@ python -m cube --cli
 
 - [PaddleOCR](https://github.com/PADDLEPADDLE/PADDLEOCR)*
 - [d3dshot](https://github.com/SerpentAI/D3DShot)
-- [usb_loopback]
-- [mouse_finder]
+- [usb_loopback](https://github.com/joyfully1265/usb_loopback)
+- [mouse_finder](https://github.com/joyfully1265/mouse_finder)
 
 >\* Experimented with [tesseract](https://tesseract-ocr.github.io/) which, although faster, had accuracy issues.
 
