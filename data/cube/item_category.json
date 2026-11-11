@@ -1,0 +1,19 @@
+{
+  "categories": {
+    "Weapon": ["Attack Power", "Magic ATT", "Boss Damage", "Ignore Defense"],
+    "Emblem": ["Attack Power", "Magic ATT", "Ignore Defense"],
+    "Secondary": ["Attack Power", "Magic ATT", "Boss Damage", "Ignore Defense"],
+    "Hat": ["STR", "DEX", "INT", "LUK", "All Stats", "Skill Cooldowns"],
+    "Top": ["STR", "DEX", "INT", "LUK", "All Stats"],
+    "Bottom": ["STR", "DEX", "INT", "LUK", "All Stats"],
+    "Overall": ["STR", "DEX", "INT", "LUK", "All Stats"],
+    "Gloves": ["STR", "DEX", "INT", "LUK", "All Stats", "Critical Damage"],
+    "Shoes": ["STR", "DEX", "INT", "LUK", "All Stats"],
+    "Cape": ["STR", "DEX", "INT", "LUK", "All Stats"],
+    "Belt": ["STR", "DEX", "INT", "LUK", "All Stats"],
+    "Shoulder": ["STR", "DEX", "INT", "LUK", "All Stats"],
+    "Accessory": ["STR", "DEX", "INT", "LUK", "All Stats", "Item Drop Rate", "Mesos Obtained"],
+    "Heart": ["STR", "DEX", "INT", "LUK", "All Stats"],
+    "Badge": ["STR", "DEX", "INT", "LUK", "All Stats"]
+  }
+}

@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+
+node "Host PC" as host {
+  component "Controller" as controller
+  component "usb_loopback\nclient" as usbClient
+  controller *-- usbClient
+}
+
+node "Remote Device" as pi {
+  component "usb_loopback\nserver" as usbServer
+  component "USB HID Gadget" as hid
+  usbServer --> hid
+}
+
+pi --> host : "Mouse movement"
+usbClient --> usbServer : TCP
+
+note right of pi : Ex: Raspberry Pi
+
+@enduml

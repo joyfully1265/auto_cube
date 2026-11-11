@@ -1,0 +1,12 @@
+@startuml
+
+repeat
+:Evaluating;
+if (Goal met?) then (y)
+  :Finished;
+  stop
+else (n)
+  :Rerolling;
+  :Confirming;
+
+@enduml

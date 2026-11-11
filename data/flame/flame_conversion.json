@@ -1,0 +1,17 @@
+{
+  "stat_combos": [
+    {"name": "STR / DEX", "main": "STR", "secondary": "DEX"},
+    {"name": "DEX / STR", "main": "DEX", "secondary": "STR"},
+    {"name": "INT / LUK", "main": "INT", "secondary": "LUK"},
+    {"name": "LUK / DEX", "main": "LUK", "secondary": "DEX"}
+  ],
+  "conversion_rates": {
+    "All Stats": 10,
+    "Attack Power": 3,
+    "Magic ATT": 3,
+    "Boss Damage": 15,
+    "Damage": 15
+  },
+  "secondary_divisor": 12,
+  "main_stat_multiplier": 1
+}

@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cube"
+version = "0.1.0"
+description = "Automates the MapleStory cubing and flaming item upgrade flows"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "python-statemachine",
+    # OCR engines: Tesseract for cube mode, Paddle for flame mode.
+    "paddlepaddle",
+    "paddleocr",
+    # To get window size
+    "pywin32; sys_platform == 'win32'",
+    # Screen capture (Win32/DXGI only)
+    "typed-D3DShot; sys_platform == 'win32'",
+]
+
+[project.scripts]
+cube = "cube.__main__:main"
+
+# `mouse_finder` and `usb_loopback` are imported by cube but are not installable
+# distributions: each is a plain directory with a top-level `__init__.py` that is
+# only importable while its parent directory is on sys.path. Keep them beside
+# `cube/` (i.e. run from the workspace root, or copy /app/{cube,mouse_finder,
+# usb_loopback} in the image) instead of declaring them as dependencies.
+
+[tool.setuptools]
+# pyproject.toml sits inside the package directory, so `cube` maps to ".".
+packages = [
+    "cube",
+    "cube.core",
+    "cube.interface",
+    "cube.models",
+    "cube.modes",
+    "cube.modes.cube",
+    "cube.modes.flame",
+]
+package-dir = { cube = "." }
+
+[tool.setuptools.package-data]
+cube = [
+    "data/cube/*.json",
+    "data/flame/*.json",
+    "res/cube/*.PNG",
+    "res/cube/*.png",
+    "res/flame/*.PNG",
+    "res/flame/*.png",
+]

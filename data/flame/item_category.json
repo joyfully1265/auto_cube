@@ -1,0 +1,6 @@
+{
+  "categories": {
+    "Armor": ["STR", "DEX", "INT", "LUK", "All Stats"],
+    "Weapon": ["STR", "DEX", "INT", "LUK", "All Stats", "Attack Power", "Magic ATT", "Boss Damage", "Damage"]
+  }
+}
