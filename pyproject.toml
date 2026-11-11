@@ -19,16 +19,12 @@ dependencies = [
     "pywin32; sys_platform == 'win32'",
     # Screen capture (Win32/DXGI only)
     "typed-D3DShot; sys_platform == 'win32'",
+    "mouse_finder @ git+https://github.com/joyfully1265/mouse_finder.git",
+    "usb_loopback @ git+https://github.com/joyfully1265/usb_loopback.git",
 ]
 
 [project.scripts]
 cube = "cube.__main__:main"
-
-# `mouse_finder` and `usb_loopback` are imported by cube but are not installable
-# distributions: each is a plain directory with a top-level `__init__.py` that is
-# only importable while its parent directory is on sys.path. Keep them beside
-# `cube/` (i.e. run from the workspace root, or copy /app/{cube,mouse_finder,
-# usb_loopback} in the image) instead of declaring them as dependencies.
 
 [tool.setuptools]
 # pyproject.toml sits inside the package directory, so `cube` maps to ".".
